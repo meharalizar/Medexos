@@ -39,8 +39,8 @@ Live HTTP crawl and link inspection of `https://www.doppkon.de/en/` verified the
 
 ### C. Downloadable Files & Media (Not Separate Pages)
 - Quality certificates on DOPPKON (`/wp-content/uploads/2025/03/...MP2021.pdf`, `...MDSAP16-2.pdf`) — DOPPKON-specific certificates, **never** copied or claimed for Medexos.
-- Product PDFs on DOPPKON (`/wp-content/uploads/2025/12/Endoscopic-Spine-Surgery-V3_2025.pdf`, `Arthroscopic-Instruments.pdf`, `Hysteroscopy-and-Urology.pdf`) — replaced by Medexos's companion catalogues plugin via `[medexos_catalogues]`.
-- Video asset on DOPPKON `/en/b2b-2/` (`B2B.mp4`) — replaced by Medexos's `manufacturing.svg` illustration until a Medexos portrait/media asset is provided.
+- Product PDFs on DOPPKON (`/wp-content/uploads/2025/12/Endoscopic-Spine-Surgery-V3_2025.pdf`, `Arthroscopic-Instruments.pdf`, `Hysteroscopy-and-Urology.pdf`) — replaced by Medexos's companion **Medexos Catalogue Requests** plugin (`plugin/medexos-catalogue-requests/`) via `[medexos_catalogues]` and `[medexos_catalogue id="..."]`.
+- Video asset on DOPPKON `/en/b2b-2/` (`B2B.mp4`) — replaced by Medexos's supplied `b2b-consultant.jpg` imagery (`medexos-surgical/assets/`).
 
 ### D. Additional Reference URLs Audited & Intentionally Omitted
 - `/en/career/` (HTTP 200, not linked in the DOPPKON English header or footer; German `/karriere/` is the primary jobs page) — omitted until Medexos provides recruitment copy, open roles, and an HR contact email.
@@ -63,20 +63,36 @@ Public-facing pages (**Quality** and **Contact**) contain **no** `[REVIEW REQUIR
 
 ---
 
-## 4. WordPress & Elementor Free Setup Checklist
+## 4. Image Asset Placement Map (`medexos-surgical/assets/`)
 
-1. **Install & Activate Theme**: Zip `medexos-surgical/` and upload via **Appearance → Themes → Add New → Upload Theme**, then activate **Medexos Surgical**.
-2. **Verify Elementor Settings**: Install and activate **Elementor** (Free). Confirm **Elementor → Settings → Features → Flexbox Container** is active (default in Elementor 3.16+).
-3. **Create the 11 WordPress Pages**:
+| Asset Filename | Applied Placement (Theme, Elementor Templates & Preview) | Framing Notes |
+| :--- | :--- | :--- |
+| `surgical-instruments-blueprint.jpg` | Home hero, Product Portfolio hero, About Medexos secondary panel | `object-fit: contain` on white panel so blueprint lines never clip |
+| `manufacturing-precision.jpg` | Home manufacturing introduction (`#about`), About Medexos hero, Quality hero | `object-fit: cover; object-position: center center` |
+| `healthcare-professional.jpg` | Home *For Professionals* (`#professionals`), For Professionals hero | `object-fit: cover; object-position: center 18%` (`mx-portrait-media`) |
+| `b2b-consultant.jpg` | Home *For B2B / Sales* (`#business`), For B2B / Sales hero, B2B Partnerships hero | `object-fit: cover; object-position: center 18%` (`mx-portrait-media`) |
+
+---
+
+## 5. WordPress, Companion Plugin & Elementor Free Setup Checklist
+
+1. **Install & Activate Theme (Package 1)**: Zip `medexos-surgical/` alone and upload via **Appearance → Themes → Add New → Upload Theme**, then activate **Medexos Surgical**.
+2. **Install & Configure Companion Catalogue Plugin (Package 2)**:
+   - Zip `plugin/medexos-catalogue-requests/` alone and upload via **Plugins → Add New → Upload Plugin**, then activate **Medexos Catalogue Requests**.
+   - Go to **Tools → Medexos catalogue setup** and click **Create missing catalogue page drafts** to create all 7 draft pages (`orthopedic-spinal-instruments`, `ophthalmic-instruments`, `laryngoscopes`, `liposuction-cannulas-accessories`, `plastic-surgery-instruments`, `retractor-systems`, `veterinary-orthopedic-implants`) containing `[medexos_catalogue id="..."]`.
+   - Set **Enquiry recipient** (`medexos_recipient`) and paste the approved **PDF URL** (`medexos_pdf_<slug>`) for each catalogue, then click **Save settings**. *(Alternatively, upload matching PDFs to `plugin/medexos-catalogue-requests/assets/pdf/` using the filenames `orthopedic-spinal.pdf`, `ophthalmic.pdf`, `laryngoscope.pdf`, `liposuction.pdf`, `plastic-surgery.pdf`, `retractors.pdf`, `veterinary.pdf` and leave the URL field blank.)*
+   - Configure WordPress **SMTP**, test a catalogue submission on staging to verify dual email delivery, and then publish the 7 catalogue draft pages so `[medexos_catalogues]` links directly to them.
+3. **Verify Elementor Settings**: Install and activate **Elementor** (Free). Confirm **Elementor → Settings → Features → Flexbox Container** is active (default in Elementor 3.16+).
+4. **Create the 11 WordPress Pages**:
    - Create pages with the exact slugs in the Page Map above (`who-we-are`, `for-professionals`, `for-b2b-sales`, `b2b-partnerships`, `quality`, `portfolio`, `contact`, `legal-notice`, `privacy-policy`, `terms-and-conditions`, plus `home`).
    - Set **Template** to **Medexos Full Width** on each page.
    - Save **Legal Notice**, **Privacy Policy**, and **Terms and Conditions** as **Draft** until reviewed and approved.
-4. **Import Elementor JSON Templates**:
+5. **Import Elementor JSON Templates**:
    - Go to **Templates → Saved Templates → Import Templates** and import the 11 JSON files from `elementor-templates/`.
    - Open each page with **Edit with Elementor**, click the folder icon (**Add Template → My Templates**), insert the matching template, and save/publish.
-5. **Assign Static Homepage**: Go to **Settings → Reading → Your homepage displays → A static page**, pick **Home**, and save.
-6. **Configure Navigation Menu** *(optional — the theme also provides a complete built-in fallback menu with dropdowns)*:
+6. **Assign Static Homepage**: Go to **Settings → Reading → Your homepage displays → A static page**, pick **Home**, and save.
+7. **Configure Navigation Menu** *(optional — the theme also provides a complete built-in fallback menu with dropdowns)*:
    - Go to **Appearance → Menus**, create a menu assigned to **Primary navigation**, and nest **About Medexos** + **Quality** under **About**, and **For Professionals** + **For B2B / Sales** + **B2B Partnerships** under **Solutions**, alongside **Home**, **Catalogues**, and **Contact**.
-7. **Configure WhatsApp Number**: Go to **Appearance → Customize → Medexos Contact** to verify or update the default number (`923296324928` / `+92 329 6324928`).
-8. **Publish Approved Legal Pages**: Once reviewed, publish **Legal Notice**, **Privacy Policy** (and optionally assign it in **Settings → Privacy**), and **Terms and Conditions**. The theme footer detects published legal pages automatically.
-9. **Replace Starter Images via Media Library (if needed)**: Click any Image widget in Elementor (**Content → Choose Image**) to select WordPress Media Library uploads (for subdirectory installs or when replacing `manufacturing.svg` in the B2B sections with your portrait).
+8. **Configure WhatsApp Number**: Go to **Appearance → Customize → Medexos Contact** to verify or update the default number (`923296324928` / `+92 329 6324928`).
+9. **Publish Approved Legal Pages**: Once reviewed, publish **Legal Notice**, **Privacy Policy** (and optionally assign it in **Settings → Privacy**), and **Terms and Conditions**. The theme footer detects published legal pages automatically.
+10. **Subdirectory Media Library Swap (if needed)**: If WordPress runs in a subdirectory rather than domain root, click each Image widget in Elementor (**Content → Choose Image**) and select the matching uploaded image from the WordPress Media Library.

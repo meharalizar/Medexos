@@ -9,6 +9,7 @@ const rootDir = path.resolve(__dirname, '..');
 
 const JS_FILES = [
 	'medexos-surgical/assets/menu.js',
+	'preview/preview-catalogue.js',
 	'preview/pages.mjs',
 	'preview/server.mjs',
 	'preview/verify.mjs',
@@ -43,6 +44,7 @@ async function lint() {
 
 		const localIds = new Set();
 		let pageWidgets = 0;
+		const imageFiles = [];
 
 		function walk(elements) {
 			for (const el of elements) {
@@ -67,6 +69,18 @@ async function lint() {
 							throw new Error(`${fileName}: button link "${target}" does not match a mapped Medexos route`);
 						}
 					}
+					if (el.widgetType === 'image') {
+						const url = el.settings?.image?.url || '';
+						const alt = el.settings?.image?.alt || '';
+						const prefix = '/wp-content/themes/medexos-surgical/assets/';
+						if (!url.startsWith(prefix)) {
+							throw new Error(`${fileName}: image widget has unexpected url "${url}"`);
+						}
+						if (!alt.trim()) {
+							throw new Error(`${fileName}: image widget "${el.id}" missing descriptive alt text`);
+						}
+						imageFiles.push(url.slice(prefix.length));
+					}
 				} else if (el.elType !== 'container') {
 					throw new Error(`${fileName}: unexpected elType "${el.elType}"`);
 				}
@@ -78,6 +92,10 @@ async function lint() {
 		}
 
 		walk(tpl.content);
+
+		for (const imgFile of imageFiles) {
+			await fs.access(path.join(rootDir, 'medexos-surgical', 'assets', imgFile));
+		}
 
 		if (pageWidgets < 6) {
 			throw new Error(`${fileName}: expected granular native Elementor widgets, found only ${pageWidgets}`);
@@ -97,7 +115,7 @@ async function lint() {
 	}
 
 	console.log(
-		`Lint passed: ${JS_FILES.length} JS files valid, ${routes.length} Elementor Free templates (${globalIds.size} unique nodes, ${totalWidgets} Free widgets), all internal button URLs valid, CSS clean.`
+		`Lint passed: ${JS_FILES.length} JS files valid, ${routes.length} Elementor Free templates (${globalIds.size} unique nodes, ${totalWidgets} Free widgets), all internal button URLs & image assets valid, CSS clean.`
 	);
 }
 

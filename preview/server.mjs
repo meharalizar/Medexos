@@ -2,12 +2,14 @@ import http from 'node:http';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { PAGES, renderPageHtml } from './pages.mjs';
+import { PAGES, CATALOGUE_PAGES, ALL_PREVIEW_PAGES, renderPageHtml } from './pages.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
 const themeDir = path.join(rootDir, 'medexos-surgical');
 const themeAssetsDir = path.join(themeDir, 'assets');
+const pluginCoversDir = path.join(rootDir, 'plugin', 'medexos-catalogue-requests', 'assets', 'covers');
+const previewCatalogueScript = path.join(__dirname, 'preview-catalogue.js');
 const elementorDir = path.join(rootDir, 'elementor-templates');
 
 const MIME_TYPES = {
@@ -40,6 +42,17 @@ function resolveAllowedAsset(urlPathname) {
 		}
 	}
 
+	if (urlPathname === '/preview/preview-catalogue.js') {
+		return previewCatalogueScript;
+	}
+
+	if (urlPathname.startsWith('/plugin/medexos-catalogue-requests/assets/covers/') && urlPathname.endsWith('.jpg')) {
+		const candidate = path.resolve(rootDir, `.${urlPathname}`);
+		if (isInside(pluginCoversDir, candidate)) {
+			return candidate;
+		}
+	}
+
 	if (urlPathname.startsWith('/elementor-templates/') && urlPathname.endsWith('.json')) {
 		const candidate = path.resolve(rootDir, `.${urlPathname}`);
 		if (isInside(elementorDir, candidate)) {
@@ -63,7 +76,7 @@ const server = http.createServer(async (req, res) => {
 		}
 
 		// Trailing-slash normalization for multipage routes (e.g. /who-we-are -> /who-we-are/)
-		if (pathname !== '/' && !pathname.endsWith('/') && PAGES[`${pathname}/`]) {
+		if (pathname !== '/' && !pathname.endsWith('/') && ALL_PREVIEW_PAGES[`${pathname}/`]) {
 			res.writeHead(301, { Location: `${pathname}/` });
 			res.end();
 			return;
@@ -110,5 +123,7 @@ const port = Number(process.env.PORT) || 3000;
 const host = '0.0.0.0';
 
 server.listen(port, host, () => {
-	console.log(`Medexos Surgical multipage preview running at http://${host}:${port} (${Object.keys(PAGES).length} routes)`);
+	console.log(
+		`Medexos Surgical multipage preview running at http://${host}:${port} (${Object.keys(PAGES).length} site routes + ${Object.keys(CATALOGUE_PAGES).length} catalogue preview routes)`
+	);
 });

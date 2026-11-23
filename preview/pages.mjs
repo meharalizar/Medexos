@@ -6,7 +6,46 @@ export const SITE_META = {
 	phoneHref: 'tel:+923296324928',
 	whatsappHref: 'https://wa.me/923296324928',
 	assets: '/medexos-surgical/assets',
+	pluginCovers: '/plugin/medexos-catalogue-requests/assets/covers',
 };
+
+export const CATALOGUES = [
+	{
+		slug: 'orthopedic-spinal-instruments',
+		title: 'Orthopedic Spinal Instruments',
+		pdf: 'orthopedic-spinal.pdf',
+	},
+	{
+		slug: 'ophthalmic-instruments',
+		title: 'Ophthalmic Instruments',
+		pdf: 'ophthalmic.pdf',
+	},
+	{
+		slug: 'laryngoscopes',
+		title: 'Laryngoscopes',
+		pdf: 'laryngoscope.pdf',
+	},
+	{
+		slug: 'liposuction-cannulas-accessories',
+		title: 'Liposuction Cannulas & Accessories',
+		pdf: 'liposuction.pdf',
+	},
+	{
+		slug: 'plastic-surgery-instruments',
+		title: 'Plastic Surgery Instruments',
+		pdf: 'plastic-surgery.pdf',
+	},
+	{
+		slug: 'retractor-systems',
+		title: 'Retractor Systems',
+		pdf: 'retractors.pdf',
+	},
+	{
+		slug: 'veterinary-orthopedic-implants',
+		title: 'Veterinary Orthopedic Implants',
+		pdf: 'veterinary.pdf',
+	},
+];
 
 const ARROW_SVG =
 	'<svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>';
@@ -17,60 +56,36 @@ const WHATSAPP_SVG =
 const CHEVRON_SVG =
 	'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>';
 
-function catalogueGridMarkup() {
-	const ranges = [
-		{
-			code: 'RANGE 01',
-			title: 'General &amp; Diagnostic Instruments',
-			desc: 'Forceps, scissors, retractors, and theatre essentials manufactured to consistent clinical tolerances.',
-			icon: '<svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>',
-		},
-		{
-			code: 'RANGE 02',
-			title: 'Dental &amp; Oral Surgery',
-			desc: 'Elevators, extraction forceps, scalers, and restorative sets designed for precision handling.',
-			icon: '<svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c-2.5 0-4 2.2-4 5.2 0 3.2 1.7 5.5 2.4 9.2.3 1.7 1.2 3.6 2.4 3.6 1.1 0 1.6-1.8 2.2-4 .5-1.7 1.5-2.5 2-2.5s1.5.8 2 2.5c.6 2.2 1.1 4 2.2 4 1.2 0 2.1-1.9 2.4-3.6.7-3.7 2.4-6 2.4-9.2C21 5.2 19.5 3 17 3c-1.8 0-3.1.9-5 .9S8.8 3 7 3Z"/></svg>',
-		},
-		{
-			code: 'RANGE 03',
-			title: 'ENT, Ophthalmic &amp; Microsurgery',
-			desc: 'Fine-tip micro-instruments, specula, and needle holders engineered for delicate procedures.',
-			icon: '<svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
-		},
-		{
-			code: 'RANGE 04',
-			title: 'Veterinary Surgical Ranges',
-			desc: 'Durable small-animal and large-animal instrument sets supporting modern veterinary practices.',
-			icon: '<svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/><rect x="3" y="3" width="18" height="18" rx="4"/></svg>',
-		},
-	];
+function escapeHtml(value) {
+	return String(value)
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;');
+}
 
+function catalogueGridMarkup() {
 	return `
 		<div class="grid medexos-catalogue-grid">
-			${ranges
-				.map(
-					(r) => `
+			${CATALOGUES.map((item) => {
+				const safeTitle = escapeHtml(item.title);
+				return `
 				<article class="card">
 					<div class="card-media">
-						<div class="card-emblem" aria-hidden="true">
-							${r.icon}
-							<span class="card-emblem-code">${r.code}</span>
-						</div>
+						<img src="${SITE_META.pluginCovers}/${item.slug}.jpg" alt="${safeTitle} catalogue cover" loading="lazy">
 					</div>
 					<div class="card-body">
-						<h3>${r.title}</h3>
-						<p>${r.desc}</p>
-						<a class="card-link" href="/contact/">
-							Request catalogue
+						<h3>${safeTitle}</h3>
+						<a class="card-link" href="/${item.slug}/">
+							Explore catalogue
 							${ARROW_SVG}
 						</a>
 					</div>
-				</article>`
-				)
-				.join('')}
+				</article>`;
+			}).join('')}
 		</div>
 		<p class="catalogue-fallback-note">
-			Downloadable catalogue editions publish here automatically when the Medexos Catalogues plugin is active. Contact our team directly for full product sheets.
+			In WordPress, the <code>[medexos_catalogues]</code> shortcode displays these published catalogues automatically when the companion <strong>Medexos Catalogue Requests</strong> plugin is active, and falls back to four core instrument range cards if the plugin is deactivated.
 		</p>
 	`;
 }
@@ -133,13 +148,13 @@ export const PAGES = {
 					</div>
 				</div>
 				<div class="panel hero-art">
-					<img src="${SITE_META.assets}/technical.svg" alt="Illustrated technical drawing of Medexos surgical instruments">
+					<img src="${SITE_META.assets}/surgical-instruments-blueprint.jpg" alt="Technical engineering blueprint of Medexos surgical instruments">
 				</div>
 			</section>
 
 			<section class="ref-intro" id="about">
 				<div class="intro-visual">
-					<img src="${SITE_META.assets}/manufacturing.svg" alt="Conceptual surgical instrument manufacturing illustration">
+					<img src="${SITE_META.assets}/manufacturing-precision.jpg" alt="Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments">
 				</div>
 				<div>
 					<span class="ref-kicker">What we do</span>
@@ -183,7 +198,7 @@ export const PAGES = {
 							${ARROW_SVG}
 						</a>
 					</div>
-					<img src="${SITE_META.assets}/generated-professional.jpg" alt="Healthcare professional in clinical coat with stethoscope" loading="lazy">
+					<img src="${SITE_META.assets}/healthcare-professional.jpg" alt="Healthcare professional in clinical coat with stethoscope" loading="lazy">
 				</div>
 			</section>
 
@@ -210,7 +225,7 @@ export const PAGES = {
 							</a>
 						</div>
 					</div>
-					<img src="${SITE_META.assets}/manufacturing.svg" alt="Surgical instrument manufacturing illustration" loading="lazy">
+					<img src="${SITE_META.assets}/b2b-consultant.jpg" alt="Medical equipment B2B consultant in a surgical instruments showroom" loading="lazy">
 				</div>
 			</section>
 
@@ -251,8 +266,8 @@ export const PAGES = {
 						<a class="button white" href="/quality/"><span>Quality practices</span>${ARROW_SVG}</a>
 					</div>
 				</div>
-				<div class="page-hero-media">
-					<img src="${SITE_META.assets}/manufacturing.svg" alt="Conceptual surgical instrument manufacturing illustration">
+				<div class="page-hero-media center-crop">
+					<img src="${SITE_META.assets}/manufacturing-precision.jpg" alt="Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments">
 				</div>
 			</section>
 
@@ -297,7 +312,7 @@ export const PAGES = {
 							<a class="button white" href="/for-b2b-sales/"><span>For B2B / Sales</span>${ARROW_SVG}</a>
 						</div>
 					</div>
-					<img class="audience-img-contain" src="${SITE_META.assets}/technical.svg" alt="Technical illustration of Medexos surgical instruments">
+					<img class="audience-img-contain" src="${SITE_META.assets}/surgical-instruments-blueprint.jpg" alt="Technical engineering blueprint of Medexos surgical instruments">
 				</div>
 			</section>
 
@@ -324,7 +339,7 @@ export const PAGES = {
 					</div>
 				</div>
 				<div class="page-hero-media">
-					<img src="${SITE_META.assets}/generated-professional.jpg" alt="Healthcare professional in clinical coat with stethoscope">
+					<img src="${SITE_META.assets}/healthcare-professional.jpg" alt="Healthcare professional in clinical coat with stethoscope">
 				</div>
 			</section>
 
@@ -391,7 +406,7 @@ export const PAGES = {
 					</div>
 				</div>
 				<div class="page-hero-media">
-					<img src="${SITE_META.assets}/manufacturing.svg" alt="Surgical instrument manufacturing illustration">
+					<img src="${SITE_META.assets}/b2b-consultant.jpg" alt="Medical equipment B2B consultant in a surgical instruments showroom">
 				</div>
 			</section>
 
@@ -457,7 +472,7 @@ export const PAGES = {
 					</div>
 				</div>
 				<div class="page-hero-media">
-					<img src="${SITE_META.assets}/manufacturing.svg" alt="Surgical instrument manufacturing illustration">
+					<img src="${SITE_META.assets}/b2b-consultant.jpg" alt="Medical equipment B2B consultant in a surgical instruments showroom">
 				</div>
 			</section>
 
@@ -506,8 +521,8 @@ export const PAGES = {
 						<a class="button white" href="/portfolio/"><span>Explore portfolio</span>${ARROW_SVG}</a>
 					</div>
 				</div>
-				<div class="page-hero-media contain">
-					<img src="${SITE_META.assets}/technical.svg" alt="Technical illustration of surgical instruments">
+				<div class="page-hero-media center-crop">
+					<img src="${SITE_META.assets}/manufacturing-precision.jpg" alt="Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments">
 				</div>
 			</section>
 
@@ -556,7 +571,7 @@ export const PAGES = {
 					</div>
 				</div>
 				<div class="page-hero-media contain">
-					<img src="${SITE_META.assets}/technical.svg" alt="Technical drawing of Medexos surgical instruments">
+					<img src="${SITE_META.assets}/surgical-instruments-blueprint.jpg" alt="Technical engineering blueprint of Medexos surgical instruments">
 				</div>
 			</section>
 
@@ -779,8 +794,80 @@ export const PAGES = {
 	},
 };
 
+export const CATALOGUE_PAGES = Object.fromEntries(
+	CATALOGUES.map((item) => {
+		const safeTitle = escapeHtml(item.title);
+		return [
+			`/${item.slug}/`,
+			{
+				slug: item.slug,
+				title: `${item.title} — Medexos Surgical`,
+				description: `Request the ${item.title} surgical instruments catalogue from Medexos Surgical Enterprises.`,
+				bodyClass: 'page catalogue-page',
+				isCatalogueDetail: true,
+				render: () => `
+					<section class="page-hero single-col">
+						<div>
+							<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/portfolio/">Product Portfolio</a><span aria-hidden="true">/</span><span>${safeTitle}</span></nav>
+							<span class="ref-kicker">Catalogue Request</span>
+							<h1>${safeTitle}</h1>
+							<p class="page-hero-lead">Explore our ${safeTitle.toLowerCase()} catalogue. Complete the request form below to preview the companion plugin workflow, or contact our team directly.</p>
+						</div>
+					</section>
+
+					<section class="subpage-section compact">
+						<div class="catalogue-detail-panel">
+							<div class="catalogue-layout">
+								<div>
+									<div class="catalogue-cover-frame">
+										<img src="${SITE_META.pluginCovers}/${item.slug}.jpg" alt="${safeTitle} catalogue cover">
+									</div>
+									<p>Explore our ${safeTitle.toLowerCase()} catalogue. Complete the form to receive a link by email, or contact our team to discuss your requirements.</p>
+									<p class="catalogue-meta-note">WordPress shortcode: <code>[medexos_catalogue id="${item.slug}"]</code> &middot; Default PDF filename: <code>${item.pdf}</code></p>
+								</div>
+								<div>
+									<h2>Request the catalogue</h2>
+									<p class="notice catalogue-form-notice" role="status" tabindex="-1" data-preview-catalogue-notice hidden></p>
+									<form class="form" method="post" action="#" data-preview-catalogue-form data-catalogue-title="${safeTitle}">
+										<label for="m-name">Name *</label>
+										<input id="m-name" name="name" maxlength="100" required>
+										<label for="m-email">Email *</label>
+										<input id="m-email" type="email" name="email" maxlength="254" required>
+										<label for="m-company">Company</label>
+										<input id="m-company" name="company" maxlength="100">
+										<label for="m-country">Country *</label>
+										<input id="m-country" name="country" maxlength="100" required>
+										<label for="m-message">Message</label>
+										<textarea id="m-message" name="message" maxlength="2000"></textarea>
+										<p>
+											<label class="check">
+												<input type="checkbox" name="privacy" value="1" required>
+												I agree to the processing of my details for this catalogue request.
+												<a href="/privacy-policy/">Privacy policy</a>
+											</label>
+										</p>
+										<button type="submit">Send me the catalogue</button>
+									</form>
+									<p class="catalogue-meta-note">Preview mode: form submission is simulated locally without sending email. Configure PDF URLs and SMTP under <strong>Tools &rarr; Medexos catalogue setup</strong> on WordPress staging.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					${contactBandMarkup('Questions about this<br>instrument range?', 'Reach out directly by WhatsApp, telephone, or email to discuss specifications or distributor enquiries.')}
+				`,
+			},
+		];
+	})
+);
+
+export const ALL_PREVIEW_PAGES = {
+	...PAGES,
+	...CATALOGUE_PAGES,
+};
+
 export function renderPageHtml(pathname) {
-	const page = PAGES[pathname];
+	const page = ALL_PREVIEW_PAGES[pathname];
 	if (!page) {
 		return null;
 	}
@@ -793,7 +880,7 @@ export function renderPageHtml(pathname) {
 	const isB2b = pathname === '/for-b2b-sales/';
 	const isPartner = pathname === '/b2b-partnerships/';
 	const isSolutionsGroup = isProf || isB2b || isPartner;
-	const isPortfolio = pathname === '/portfolio/';
+	const isPortfolio = pathname === '/portfolio/' || Boolean(page.isCatalogueDetail);
 	const isContact = pathname === '/contact/';
 
 	return `<!doctype html>
@@ -917,6 +1004,7 @@ export function renderPageHtml(pathname) {
 	</footer>
 
 	<script src="/medexos-surgical/assets/menu.js" defer></script>
+	${page.isCatalogueDetail ? '<script src="/preview/preview-catalogue.js" defer></script>' : ''}
 </body>
 </html>
 `;

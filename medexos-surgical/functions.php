@@ -26,12 +26,12 @@ add_action('wp_enqueue_scripts', function () {
 		array(),
 		null
 	);
-	wp_enqueue_style('medexos', get_stylesheet_uri(), array('medexos-fonts'), '0.5.0');
+	wp_enqueue_style('medexos', get_stylesheet_uri(), array('medexos-fonts'), '0.6.0');
 	wp_enqueue_style(
 		'medexos-layout',
 		get_template_directory_uri() . '/assets/reference-layout.css',
 		array('medexos'),
-		'0.5.0'
+		'0.6.0'
 	);
 	wp_enqueue_script(
 		'medexos-menu',

@@ -404,9 +404,9 @@
                   "widgetType": "image",
                   "settings": {
                     "image": {
-                      "url": "/wp-content/themes/medexos-surgical/assets/technical.svg",
+                      "url": "/wp-content/themes/medexos-surgical/assets/manufacturing-precision.jpg",
                       "id": "",
-                      "alt": "Technical illustration of surgical instruments"
+                      "alt": "Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments"
                     },
                     "image_size": "full",
                     "width": {
@@ -429,7 +429,7 @@
                       "size": 270,
                       "sizes": []
                     },
-                    "object-fit": "contain",
+                    "object-fit": "cover",
                     "image_border_radius": {
                       "unit": "px",
                       "top": "6",
@@ -437,7 +437,8 @@
                       "bottom": "6",
                       "left": "6",
                       "isLinked": true
-                    }
+                    },
+                    "object-position": "center center"
                   },
                   "elements": []
                 }

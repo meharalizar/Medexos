@@ -479,9 +479,9 @@
               "widgetType": "image",
               "settings": {
                 "image": {
-                  "url": "/wp-content/themes/medexos-surgical/assets/technical.svg",
+                  "url": "/wp-content/themes/medexos-surgical/assets/surgical-instruments-blueprint.jpg",
                   "id": "",
-                  "alt": "Illustrated technical drawing of Medexos surgical instruments"
+                  "alt": "Technical engineering blueprint of Medexos surgical instruments"
                 },
                 "image_size": "full",
                 "width": {
@@ -605,9 +605,9 @@
               "widgetType": "image",
               "settings": {
                 "image": {
-                  "url": "/wp-content/themes/medexos-surgical/assets/manufacturing.svg",
+                  "url": "/wp-content/themes/medexos-surgical/assets/manufacturing-precision.jpg",
                   "id": "",
-                  "alt": "Conceptual surgical instrument manufacturing illustration"
+                  "alt": "Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments"
                 },
                 "image_size": "full",
                 "width": {
@@ -622,12 +622,12 @@
                 },
                 "height_tablet": {
                   "unit": "px",
-                  "size": 340,
+                  "size": 380,
                   "sizes": []
                 },
                 "height_mobile": {
                   "unit": "px",
-                  "size": 270,
+                  "size": 320,
                   "sizes": []
                 },
                 "object-fit": "cover",
@@ -638,7 +638,8 @@
                   "bottom": "6",
                   "left": "6",
                   "isLinked": true
-                }
+                },
+                "object-position": "center center"
               },
               "elements": []
             }
@@ -1417,7 +1418,7 @@
                   "widgetType": "image",
                   "settings": {
                     "image": {
-                      "url": "/wp-content/themes/medexos-surgical/assets/generated-professional.jpg",
+                      "url": "/wp-content/themes/medexos-surgical/assets/healthcare-professional.jpg",
                       "id": "",
                       "alt": "Healthcare professional in clinical coat with stethoscope"
                     },
@@ -1434,12 +1435,12 @@
                     },
                     "height_tablet": {
                       "unit": "px",
-                      "size": 340,
+                      "size": 360,
                       "sizes": []
                     },
                     "height_mobile": {
                       "unit": "px",
-                      "size": 270,
+                      "size": 320,
                       "sizes": []
                     },
                     "object-fit": "cover",
@@ -1450,7 +1451,9 @@
                       "bottom": "6",
                       "left": "6",
                       "isLinked": true
-                    }
+                    },
+                    "object-position": "top center",
+                    "_css_classes": "mx-portrait-media"
                   },
                   "elements": []
                 }
@@ -1647,9 +1650,9 @@
                   "widgetType": "image",
                   "settings": {
                     "image": {
-                      "url": "/wp-content/themes/medexos-surgical/assets/manufacturing.svg",
+                      "url": "/wp-content/themes/medexos-surgical/assets/b2b-consultant.jpg",
                       "id": "",
-                      "alt": "Surgical instrument manufacturing illustration"
+                      "alt": "Medical equipment B2B consultant in a surgical instruments showroom"
                     },
                     "image_size": "full",
                     "width": {
@@ -1664,12 +1667,12 @@
                     },
                     "height_tablet": {
                       "unit": "px",
-                      "size": 340,
+                      "size": 360,
                       "sizes": []
                     },
                     "height_mobile": {
                       "unit": "px",
-                      "size": 270,
+                      "size": 320,
                       "sizes": []
                     },
                     "object-fit": "cover",
@@ -1680,7 +1683,9 @@
                       "bottom": "6",
                       "left": "6",
                       "isLinked": true
-                    }
+                    },
+                    "object-position": "top center",
+                    "_css_classes": "mx-portrait-media"
                   },
                   "elements": []
                 }

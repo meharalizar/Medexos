@@ -404,9 +404,9 @@
                   "widgetType": "image",
                   "settings": {
                     "image": {
-                      "url": "/wp-content/themes/medexos-surgical/assets/technical.svg",
+                      "url": "/wp-content/themes/medexos-surgical/assets/surgical-instruments-blueprint.jpg",
                       "id": "",
-                      "alt": "Technical drawing of Medexos surgical instruments"
+                      "alt": "Technical engineering blueprint of Medexos surgical instruments"
                     },
                     "image_size": "full",
                     "width": {

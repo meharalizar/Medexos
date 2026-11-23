@@ -216,7 +216,7 @@ function buttonRow(id, buttons) {
 }
 
 function imageWidget(id, fileName, alt, opts = {}) {
-	return widget(id, 'image', {
+	const settings = {
 		image: { url: `${ASSET_BASE}${fileName}`, id: '', alt },
 		image_size: 'full',
 		width: pct(100),
@@ -225,7 +225,17 @@ function imageWidget(id, fileName, alt, opts = {}) {
 		height_mobile: px(opts.heightMobile || 270),
 		'object-fit': opts.fit || 'cover',
 		image_border_radius: box(6, 6, 6, 6),
-	});
+	};
+
+	if (opts.position) {
+		settings['object-position'] = opts.position;
+	}
+
+	if (opts.portrait) {
+		settings._css_classes = 'mx-portrait-media';
+	}
+
+	return widget(id, 'image', settings);
 }
 
 function iconListWidget(id, items, idPrefix) {
@@ -303,7 +313,16 @@ function subpageHero(nextId, { kicker, title, lead, buttons = [], image = null }
 					width_mobile: pct(100),
 					padding: box(0, 0, 0, 0),
 				},
-				[imageWidget(nextId(), image.file, image.alt, { height: 360, fit: image.fit || 'cover' })],
+				[
+					imageWidget(nextId(), image.file, image.alt, {
+						height: 360,
+						heightTablet: 340,
+						heightMobile: image.portrait ? 310 : 270,
+						fit: image.fit || 'cover',
+						position: image.position,
+						portrait: Boolean(image.portrait),
+					}),
+				],
 				true
 			)
 		);
@@ -500,7 +519,7 @@ function buildHomeTemplate() {
 						padding: box(24, 24, 24, 24),
 					},
 					[
-						imageWidget(id(), 'technical.svg', 'Illustrated technical drawing of Medexos surgical instruments', {
+						imageWidget(id(), 'surgical-instruments-blueprint.jpg', 'Technical engineering blueprint of Medexos surgical instruments', {
 							height: 540,
 							heightTablet: 380,
 							heightMobile: 300,
@@ -536,7 +555,14 @@ function buildHomeTemplate() {
 						width_mobile: pct(100),
 						padding: box(0, 0, 0, 0),
 					},
-					[imageWidget(id(), 'manufacturing.svg', 'Conceptual surgical instrument manufacturing illustration', { height: 540 })],
+					[
+						imageWidget(
+							id(),
+							'manufacturing-precision.jpg',
+							'Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments',
+							{ height: 540, heightTablet: 380, heightMobile: 320, fit: 'cover', position: 'center center' }
+						),
+					],
 					true
 				),
 				container(
@@ -649,7 +675,14 @@ function buildHomeTemplate() {
 								padding: box(0, 0, 0, 0),
 								css_classes: 'mx-overlap-media',
 							},
-							[imageWidget(id(), 'generated-professional.jpg', 'Healthcare professional in clinical coat with stethoscope', { height: 500 })],
+							[
+								imageWidget(
+									id(),
+									'healthcare-professional.jpg',
+									'Healthcare professional in clinical coat with stethoscope',
+									{ height: 500, heightTablet: 360, heightMobile: 320, fit: 'cover', position: 'top center', portrait: true }
+								),
+							],
 							true
 						),
 					],
@@ -705,7 +738,14 @@ function buildHomeTemplate() {
 								padding: box(0, 0, 0, 0),
 								css_classes: 'mx-overlap-media',
 							},
-							[imageWidget(id(), 'manufacturing.svg', 'Surgical instrument manufacturing illustration', { height: 500 })],
+							[
+								imageWidget(
+									id(),
+									'b2b-consultant.jpg',
+									'Medical equipment B2B consultant in a surgical instruments showroom',
+									{ height: 500, heightTablet: 360, heightMobile: 320, fit: 'cover', position: 'top center', portrait: true }
+								),
+							],
 							true
 						),
 						container(
@@ -779,7 +819,12 @@ function buildAboutTemplate() {
 				buttonWidget(id(), 'Explore our portfolio', '/portfolio/', 'primary'),
 				buttonWidget(id(), 'Quality practices', '/quality/', 'white'),
 			],
-			image: { file: 'manufacturing.svg', alt: 'Conceptual surgical instrument manufacturing illustration' },
+			image: {
+				file: 'manufacturing-precision.jpg',
+				alt: 'Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments',
+				fit: 'cover',
+				position: 'center center',
+			},
 		}),
 		sectionBox(id(), { flex_direction: 'column', flex_gap: gap(20), padding: box(48, 16, 48, 16) }, [
 			kickerWidget(id(), 'Company overview'),
@@ -878,7 +923,14 @@ function buildAboutTemplate() {
 							width_mobile: pct(100),
 							padding: box(0, 0, 0, 0),
 						},
-						[imageWidget(id(), 'technical.svg', 'Technical illustration of Medexos surgical instruments', { height: 380, fit: 'contain' })],
+						[
+							imageWidget(
+								id(),
+								'surgical-instruments-blueprint.jpg',
+								'Technical engineering blueprint of Medexos surgical instruments',
+								{ height: 380, fit: 'contain' }
+							),
+						],
 						true
 					),
 				],
@@ -900,7 +952,13 @@ function buildProfessionalsTemplate() {
 				buttonWidget(id(), 'Browse catalogues', '/portfolio/', 'primary'),
 				buttonWidget(id(), 'Request product info', '/contact/', 'white'),
 			],
-			image: { file: 'generated-professional.jpg', alt: 'Healthcare professional in clinical coat with stethoscope' },
+			image: {
+				file: 'healthcare-professional.jpg',
+				alt: 'Healthcare professional in clinical coat with stethoscope',
+				fit: 'cover',
+				position: 'top center',
+				portrait: true,
+			},
 		}),
 		sectionBox(id(), { flex_direction: 'column', flex_gap: gap(18), padding: box(48, 16, 48, 16) }, [
 			kickerWidget(id(), 'How we help clinicians'),
@@ -971,7 +1029,13 @@ function buildB2bSalesTemplate() {
 				buttonWidget(id(), 'Start a B2B partnership', '/b2b-partnerships/', 'primary'),
 				buttonWidget(id(), 'View catalogues', '/portfolio/', 'white'),
 			],
-			image: { file: 'manufacturing.svg', alt: 'Surgical instrument manufacturing illustration' },
+			image: {
+				file: 'b2b-consultant.jpg',
+				alt: 'Medical equipment B2B consultant in a surgical instruments showroom',
+				fit: 'cover',
+				position: 'top center',
+				portrait: true,
+			},
 		}),
 		sectionBox(id(), { flex_direction: 'column', flex_gap: gap(18), padding: box(48, 16, 48, 16) }, [
 			kickerWidget(id(), 'Commercial support'),
@@ -1058,7 +1122,13 @@ function buildB2bPartnershipsTemplate() {
 				buttonWidget(id(), 'WhatsApp Enquiry', WHATSAPP_URL, 'primary', { external: true, icon: 'whatsapp' }),
 				buttonWidget(id(), 'Contact our team', '/contact/', 'white'),
 			],
-			image: { file: 'manufacturing.svg', alt: 'Surgical instrument manufacturing illustration' },
+			image: {
+				file: 'b2b-consultant.jpg',
+				alt: 'Medical equipment B2B consultant in a surgical instruments showroom',
+				fit: 'cover',
+				position: 'top center',
+				portrait: true,
+			},
 		}),
 		sectionBox(id(), { flex_direction: 'column', flex_gap: gap(18), padding: box(48, 16, 48, 16) }, [
 			container(
@@ -1126,7 +1196,12 @@ function buildQualityTemplate() {
 				buttonWidget(id(), 'Request quality documentation', '/contact/', 'primary'),
 				buttonWidget(id(), 'Explore portfolio', '/portfolio/', 'white'),
 			],
-			image: { file: 'technical.svg', alt: 'Technical illustration of surgical instruments', fit: 'contain' },
+			image: {
+				file: 'manufacturing-precision.jpg',
+				alt: 'Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments',
+				fit: 'cover',
+				position: 'center center',
+			},
 		}),
 		sectionBox(id(), { flex_direction: 'column', flex_gap: gap(20), padding: box(48, 16, 48, 16) }, [
 			kickerWidget(id(), 'Confirmed Medexos practices'),
@@ -1176,7 +1251,11 @@ function buildPortfolioTemplate() {
 				buttonWidget(id(), 'Request a catalogue', '/contact/', 'primary'),
 				buttonWidget(id(), 'For B2B / Sales', '/for-b2b-sales/', 'white'),
 			],
-			image: { file: 'technical.svg', alt: 'Technical drawing of Medexos surgical instruments', fit: 'contain' },
+			image: {
+				file: 'surgical-instruments-blueprint.jpg',
+				alt: 'Technical engineering blueprint of Medexos surgical instruments',
+				fit: 'contain',
+			},
 		}),
 		sectionBox(id(), { _element_id: 'catalogues', flex_direction: 'column', flex_gap: gap(14), padding: box(40, 16, 64, 16) }, [
 			kickerWidget(id(), 'Available ranges'),

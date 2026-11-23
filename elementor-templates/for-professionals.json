@@ -404,7 +404,7 @@
                   "widgetType": "image",
                   "settings": {
                     "image": {
-                      "url": "/wp-content/themes/medexos-surgical/assets/generated-professional.jpg",
+                      "url": "/wp-content/themes/medexos-surgical/assets/healthcare-professional.jpg",
                       "id": "",
                       "alt": "Healthcare professional in clinical coat with stethoscope"
                     },
@@ -426,7 +426,7 @@
                     },
                     "height_mobile": {
                       "unit": "px",
-                      "size": 270,
+                      "size": 310,
                       "sizes": []
                     },
                     "object-fit": "cover",
@@ -437,7 +437,9 @@
                       "bottom": "6",
                       "left": "6",
                       "isLinked": true
-                    }
+                    },
+                    "object-position": "top center",
+                    "_css_classes": "mx-portrait-media"
                   },
                   "elements": []
                 }

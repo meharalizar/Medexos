@@ -404,9 +404,9 @@
                   "widgetType": "image",
                   "settings": {
                     "image": {
-                      "url": "/wp-content/themes/medexos-surgical/assets/manufacturing.svg",
+                      "url": "/wp-content/themes/medexos-surgical/assets/b2b-consultant.jpg",
                       "id": "",
-                      "alt": "Surgical instrument manufacturing illustration"
+                      "alt": "Medical equipment B2B consultant in a surgical instruments showroom"
                     },
                     "image_size": "full",
                     "width": {
@@ -426,7 +426,7 @@
                     },
                     "height_mobile": {
                       "unit": "px",
-                      "size": 270,
+                      "size": 310,
                       "sizes": []
                     },
                     "object-fit": "cover",
@@ -437,7 +437,9 @@
                       "bottom": "6",
                       "left": "6",
                       "isLinked": true
-                    }
+                    },
+                    "object-position": "top center",
+                    "_css_classes": "mx-portrait-media"
                   },
                   "elements": []
                 }

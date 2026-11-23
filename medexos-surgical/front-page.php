@@ -32,13 +32,13 @@ $whatsapp_url = medexos_whatsapp_url();
 		</div>
 	</div>
 	<div class="panel hero-art">
-		<img src="<?php echo esc_url($asset . 'technical.svg'); ?>" alt="<?php esc_attr_e('Illustrated technical drawing of Medexos surgical instruments', 'medexos'); ?>">
+		<img src="<?php echo esc_url($asset . 'surgical-instruments-blueprint.jpg'); ?>" alt="<?php esc_attr_e('Technical engineering blueprint of Medexos surgical instruments', 'medexos'); ?>">
 	</div>
 </section>
 
 <section class="ref-intro" id="about">
 	<div class="intro-visual">
-		<img src="<?php echo esc_url($asset . 'manufacturing.svg'); ?>" alt="<?php esc_attr_e('Conceptual surgical instrument manufacturing illustration', 'medexos'); ?>">
+		<img src="<?php echo esc_url($asset . 'manufacturing-precision.jpg'); ?>" alt="<?php esc_attr_e('Precision CNC manufacturing, technical blueprint, and finished Medexos surgical instruments', 'medexos'); ?>">
 	</div>
 	<div>
 		<span class="ref-kicker"><?php esc_html_e('What we do', 'medexos'); ?></span>
@@ -82,7 +82,7 @@ $whatsapp_url = medexos_whatsapp_url();
 				<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</a>
 		</div>
-		<img src="<?php echo esc_url($asset . 'generated-professional.jpg'); ?>" alt="<?php esc_attr_e('Healthcare professional in clinical coat with stethoscope', 'medexos'); ?>" loading="lazy">
+		<img src="<?php echo esc_url($asset . 'healthcare-professional.jpg'); ?>" alt="<?php esc_attr_e('Healthcare professional in clinical coat with stethoscope', 'medexos'); ?>" loading="lazy">
 	</div>
 </section>
 
@@ -109,7 +109,7 @@ $whatsapp_url = medexos_whatsapp_url();
 				</a>
 			</div>
 		</div>
-		<img src="<?php echo esc_url($asset . 'manufacturing.svg'); ?>" alt="<?php esc_attr_e('Surgical instrument manufacturing illustration', 'medexos'); ?>" loading="lazy">
+		<img src="<?php echo esc_url($asset . 'b2b-consultant.jpg'); ?>" alt="<?php esc_attr_e('Medical equipment B2B consultant in a surgical instruments showroom', 'medexos'); ?>" loading="lazy">
 	</div>
 </section>
 
