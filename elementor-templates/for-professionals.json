@@ -1,0 +1,1937 @@
+{
+  "title": "Medexos Surgical — For Professionals",
+  "type": "page",
+  "version": "0.4",
+  "page_settings": {
+    "template": "templates/elementor-full-width.php",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "mxpr0010",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1370,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "28",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "12",
+          "bottom": "20",
+          "left": "12",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "mxpr0011",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "flex_align_items": "center",
+            "flex_gap": {
+              "column": "48",
+              "row": "28",
+              "isLinked": false,
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(7, 70, 107, 0.10)",
+            "border_radius": {
+              "unit": "px",
+              "top": "6",
+              "right": "6",
+              "bottom": "6",
+              "left": "6",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "60",
+              "bottom": "56",
+              "left": "60",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "36",
+              "right": "28",
+              "bottom": "36",
+              "left": "28",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "26",
+              "right": "20",
+              "bottom": "26",
+              "left": "20",
+              "isLinked": false
+            },
+            "css_classes": "mx-hero-pattern"
+          },
+          "elements": [
+            {
+              "id": "mxpr0003",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 58,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0004",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "For Healthcare & Veterinary Professionals",
+                    "header_size": "p",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0005",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Instruments built around clinical requirements.",
+                    "header_size": "h1",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 39,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.12,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -1.1,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0006",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Discover surgical instrument ranges for human healthcare and veterinary practice, review catalogue options, and request specific product details directly from the Medexos team.</p>",
+                    "text_color": "#4b5c6e",
+                    "typography_typography": "custom",
+                    "typography_font_family": "DM Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.66,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0007",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "8",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "mxpr0001",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Browse catalogues",
+                        "link": {
+                          "url": "/portfolio/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-arrow-right",
+                          "library": "fa-solid"
+                        },
+                        "icon_align": "right",
+                        "icon_indent": {
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "40",
+                          "right": "40",
+                          "bottom": "40",
+                          "left": "40",
+                          "isLinked": true
+                        },
+                        "text_padding": {
+                          "unit": "px",
+                          "top": "14",
+                          "right": "24",
+                          "bottom": "14",
+                          "left": "24",
+                          "isLinked": false
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "background_color": "#07466b",
+                        "button_text_color": "#ffffff",
+                        "button_background_hover_color": "#053350",
+                        "hover_color": "#ffffff"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "mxpr0002",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Request product info",
+                        "link": {
+                          "url": "/contact/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-arrow-right",
+                          "library": "fa-solid"
+                        },
+                        "icon_align": "right",
+                        "icon_indent": {
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "40",
+                          "right": "40",
+                          "bottom": "40",
+                          "left": "40",
+                          "isLinked": true
+                        },
+                        "text_padding": {
+                          "unit": "px",
+                          "top": "14",
+                          "right": "24",
+                          "bottom": "14",
+                          "left": "24",
+                          "isLinked": false
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "background_color": "#ffffff",
+                        "button_text_color": "#07466b",
+                        "button_background_hover_color": "#f3f7fc",
+                        "hover_color": "#053350",
+                        "border_border": "solid",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_color": "rgba(7, 70, 107, 0.18)"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mxpr0008",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 42,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0009",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "/wp-content/themes/medexos-surgical/assets/generated-professional.jpg",
+                      "id": "",
+                      "alt": "Healthcare professional in clinical coat with stethoscope"
+                    },
+                    "image_size": "full",
+                    "width": {
+                      "unit": "%",
+                      "size": 100,
+                      "sizes": []
+                    },
+                    "height": {
+                      "unit": "px",
+                      "size": 360,
+                      "sizes": []
+                    },
+                    "height_tablet": {
+                      "unit": "px",
+                      "size": 340,
+                      "sizes": []
+                    },
+                    "height_mobile": {
+                      "unit": "px",
+                      "size": 270,
+                      "sizes": []
+                    },
+                    "object-fit": "cover",
+                    "image_border_radius": {
+                      "unit": "px",
+                      "top": "6",
+                      "right": "6",
+                      "bottom": "6",
+                      "left": "6",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mxpr0012",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1370,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "28",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "24",
+          "right": "12",
+          "bottom": "24",
+          "left": "12",
+          "isLinked": false
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+          "column": "18",
+          "row": "18",
+          "isLinked": true,
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "mxpr0013",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "How we help clinicians",
+            "header_size": "p",
+            "title_color": "#07466b",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 15,
+              "sizes": []
+            },
+            "typography_font_weight": "600"
+          },
+          "elements": []
+        },
+        {
+          "id": "mxpr0014",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Straightforward range discovery and enquiry support.",
+            "header_size": "h2",
+            "title_color": "#1e2c3a",
+            "typography_typography": "custom",
+            "typography_font_family": "Plus Jakarta Sans",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 40,
+              "sizes": []
+            },
+            "typography_font_size_tablet": {
+              "unit": "px",
+              "size": 31,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 26,
+              "sizes": []
+            },
+            "typography_font_weight": "700",
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.2,
+              "sizes": []
+            },
+            "typography_letter_spacing": {
+              "unit": "px",
+              "size": -1.1,
+              "sizes": []
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "mxpr0015",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "flex_gap": {
+              "column": "22",
+              "row": "22",
+              "isLinked": true,
+              "unit": "px"
+            },
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "mxpr0016",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(7, 70, 107, 0.10)",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "6",
+                  "right": "6",
+                  "bottom": "6",
+                  "left": "6",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "36",
+                  "right": "32",
+                  "bottom": "36",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "20",
+                  "bottom": "24",
+                  "left": "20",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 33.33,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0017",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "01",
+                    "header_size": "p",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 28,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 24,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.4,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0018",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Browse Speciality Ranges",
+                    "header_size": "h3",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 24,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.4,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0019",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Explore our product portfolio covering human surgical disciplines and veterinary instrument sets.</p>",
+                    "text_color": "#4b5c6e",
+                    "typography_typography": "custom",
+                    "typography_font_family": "DM Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.66,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "mxpr0020",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(7, 70, 107, 0.10)",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "6",
+                  "right": "6",
+                  "bottom": "6",
+                  "left": "6",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "36",
+                  "right": "32",
+                  "bottom": "36",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "20",
+                  "bottom": "24",
+                  "left": "20",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 33.33,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0021",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "02",
+                    "header_size": "p",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 28,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 24,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.4,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0022",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Request Pattern Details",
+                    "header_size": "h3",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 24,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.4,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0023",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Share your required instrument patterns, lengths, or speciality focus by WhatsApp, phone, or email.</p>",
+                    "text_color": "#4b5c6e",
+                    "typography_typography": "custom",
+                    "typography_font_family": "DM Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.66,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "mxpr0024",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#ffffff",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "rgba(7, 70, 107, 0.10)",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "6",
+                  "right": "6",
+                  "bottom": "6",
+                  "left": "6",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "36",
+                  "right": "32",
+                  "bottom": "36",
+                  "left": "32",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "20",
+                  "bottom": "24",
+                  "left": "20",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 33.33,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0025",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "03",
+                    "header_size": "p",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 28,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 24,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.4,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0026",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Receive Catalogue Sheets",
+                    "header_size": "h3",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 20,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 24,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.4,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0027",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Our team provides relevant catalogue pages and product documentation to support your clinical review.</p>",
+                    "text_color": "#4b5c6e",
+                    "typography_typography": "custom",
+                    "typography_font_family": "DM Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.66,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mxpr0028",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1370,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "16",
+          "right": "16",
+          "bottom": "48",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "28",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "24",
+          "right": "12",
+          "bottom": "24",
+          "left": "12",
+          "isLinked": false
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+          "column": "18",
+          "row": "18",
+          "isLinked": true,
+          "unit": "px"
+        }
+      },
+      "elements": [
+        {
+          "id": "mxpr0029",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "14",
+              "row": "14",
+              "isLinked": true,
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(7, 70, 107, 0.10)",
+            "border_radius": {
+              "unit": "px",
+              "top": "6",
+              "right": "6",
+              "bottom": "6",
+              "left": "6",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "48",
+              "right": "52",
+              "bottom": "48",
+              "left": "52",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "26",
+              "right": "20",
+              "bottom": "26",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "mxpr0030",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Product information checklist",
+                "header_size": "p",
+                "title_color": "#07466b",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "typography_font_weight": "600"
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpr0031",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "What to include in a clinical product enquiry",
+                "header_size": "h2",
+                "title_color": "#1e2c3a",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 27,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.4,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpr0032",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>To help our team respond quickly with the most relevant catalogue sections, share any of the following details:</p>",
+                "text_color": "#4b5c6e",
+                "typography_typography": "custom",
+                "typography_font_family": "DM Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.66,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpr0033",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "_id": "prcl1",
+                    "text": "Clinical discipline (human surgical speciality or veterinary practice)",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "prcl2",
+                    "text": "Specific instrument type, pattern name, or reference description",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "prcl3",
+                    "text": "Whether you need full speciality catalogues or individual item details",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "_id": "prcl4",
+                    "text": "Your preferred response channel (WhatsApp, phone, or email)",
+                    "selected_icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  }
+                ],
+                "space_between": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "icon_color": "#07466b",
+                "icon_size": {
+                  "unit": "px",
+                  "size": 20,
+                  "sizes": []
+                },
+                "text_color": "#07466b",
+                "text_indent": {
+                  "unit": "px",
+                  "size": 10,
+                  "sizes": []
+                },
+                "icon_typography_typography": "custom",
+                "icon_typography_font_family": "Plus Jakarta Sans",
+                "icon_typography_font_size": {
+                  "unit": "px",
+                  "size": 15,
+                  "sizes": []
+                },
+                "icon_typography_font_weight": "600"
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpr0034",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "8",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0035",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "View Product Portfolio",
+                    "link": {
+                      "url": "/portfolio/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-arrow-right",
+                      "library": "fa-solid"
+                    },
+                    "icon_align": "right",
+                    "icon_indent": {
+                      "unit": "px",
+                      "size": 8,
+                      "sizes": []
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "isLinked": true
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "24",
+                      "bottom": "14",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "background_color": "#07466b",
+                    "button_text_color": "#ffffff",
+                    "button_background_hover_color": "#053350",
+                    "hover_color": "#ffffff"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0036",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Contact our team",
+                    "link": {
+                      "url": "/contact/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "selected_icon": {
+                      "value": "fas fa-arrow-right",
+                      "library": "fa-solid"
+                    },
+                    "icon_align": "right",
+                    "icon_indent": {
+                      "unit": "px",
+                      "size": 8,
+                      "sizes": []
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "40",
+                      "bottom": "40",
+                      "left": "40",
+                      "isLinked": true
+                    },
+                    "text_padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "24",
+                      "bottom": "14",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600",
+                    "background_color": "#f3f7fc",
+                    "button_text_color": "#07466b",
+                    "button_background_hover_color": "#dfeaf7",
+                    "hover_color": "#053350",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "rgba(7, 70, 107, 0.18)"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mxpr0037",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1370,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "16",
+          "right": "16",
+          "bottom": "72",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "28",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "12",
+          "right": "12",
+          "bottom": "48",
+          "left": "12",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "mxpr0038",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "flex_align_items": "center",
+            "flex_gap": {
+              "column": "56",
+              "row": "28",
+              "isLinked": false,
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(7, 70, 107, 0.10)",
+            "border_radius": {
+              "unit": "px",
+              "top": "6",
+              "right": "6",
+              "bottom": "6",
+              "left": "6",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "60",
+              "bottom": "56",
+              "left": "60",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "36",
+              "right": "28",
+              "bottom": "36",
+              "left": "28",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "26",
+              "right": "20",
+              "bottom": "26",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "mxpr0039",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 48,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0040",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Direct enquiry",
+                    "header_size": "p",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0041",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Need details on a specific instrument?",
+                    "header_size": "h2",
+                    "title_color": "#1e2c3a",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 40,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 31,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 26,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -1.1,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "mxpr0042",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 52,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpr0043",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Speak directly with Medexos Surgical Enterprises to request product information or catalogue documentation.</p>",
+                    "text_color": "#4b5c6e",
+                    "typography_typography": "custom",
+                    "typography_font_family": "DM Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.66,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpr0044",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "isLinked": true,
+                      "unit": "px"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "8",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "mxpr0045",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "WhatsApp Enquiry",
+                        "link": {
+                          "url": "https://wa.me/923296324928",
+                          "is_external": "on",
+                          "nofollow": "on"
+                        },
+                        "selected_icon": {
+                          "value": "fab fa-whatsapp",
+                          "library": "fa-brands"
+                        },
+                        "icon_align": "right",
+                        "icon_indent": {
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "40",
+                          "right": "40",
+                          "bottom": "40",
+                          "left": "40",
+                          "isLinked": true
+                        },
+                        "text_padding": {
+                          "unit": "px",
+                          "top": "14",
+                          "right": "24",
+                          "bottom": "14",
+                          "left": "24",
+                          "isLinked": false
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "background_color": "#07466b",
+                        "button_text_color": "#ffffff",
+                        "button_background_hover_color": "#053350",
+                        "hover_color": "#ffffff"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "mxpr0046",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Contact page",
+                        "link": {
+                          "url": "/contact/",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "fas fa-arrow-right",
+                          "library": "fa-solid"
+                        },
+                        "icon_align": "right",
+                        "icon_indent": {
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "40",
+                          "right": "40",
+                          "bottom": "40",
+                          "left": "40",
+                          "isLinked": true
+                        },
+                        "text_padding": {
+                          "unit": "px",
+                          "top": "14",
+                          "right": "24",
+                          "bottom": "14",
+                          "left": "24",
+                          "isLinked": false
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "background_color": "#ffffff",
+                        "button_text_color": "#07466b",
+                        "button_background_hover_color": "#f3f7fc",
+                        "hover_color": "#053350",
+                        "border_border": "solid",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_color": "rgba(7, 70, 107, 0.18)"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "mxpr0047",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "+92 329 6324928",
+                        "link": {
+                          "url": "tel:+923296324928",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "selected_icon": {
+                          "value": "",
+                          "library": ""
+                        },
+                        "icon_align": "right",
+                        "icon_indent": {
+                          "unit": "px",
+                          "size": 8,
+                          "sizes": []
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "40",
+                          "right": "40",
+                          "bottom": "40",
+                          "left": "40",
+                          "isLinked": true
+                        },
+                        "text_padding": {
+                          "unit": "px",
+                          "top": "14",
+                          "right": "24",
+                          "bottom": "14",
+                          "left": "24",
+                          "isLinked": false
+                        },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Plus Jakarta Sans",
+                        "typography_font_size": {
+                          "unit": "px",
+                          "size": 15,
+                          "sizes": []
+                        },
+                        "typography_font_weight": "600",
+                        "background_color": "#ffffff",
+                        "button_text_color": "#07466b",
+                        "button_background_hover_color": "#f3f7fc",
+                        "hover_color": "#053350",
+                        "border_border": "solid",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_color": "rgba(7, 70, 107, 0.18)"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,12 +1,159 @@
 <?php
-if (is_page() && medexos_uses_page_builder()) {
-    require get_template_directory() . '/templates/elementor-full-width.php';
-    return;
+if (!defined('ABSPATH')) {
+	exit;
 }
-get_header(); $asset=get_template_directory_uri().'/assets/'; ?>
-<section class="hero"><div class="panel hero-copy"><p class="hero-kicker">Your partner for surgical instruments and manufacturing enquiries.</p><h1>MEDEXOS.<span>surgical<br>instruments.</span></h1><p>Explore our surgical instrument portfolio for human and veterinary applications.</p><div class="actions"><a class="button" href="#about">Who we are </a><a class="button alt" href="#catalogues">Our portfolio </a></div></div><div class="panel hero-art" role="img" aria-label="Illustrated technical drawing of surgical instruments"></div></section>
-<section class="ref-intro" id="about"><div class="intro-visual"><img src="<?php echo esc_url($asset.'manufacturing.svg'); ?>" alt="Conceptual surgical instrument manufacturing illustration"></div><div><span class="ref-kicker">What we do.</span><h2>Our dedication is to surgical instrumentation.</h2><p>Medexos Surgical Enterprises offers a range of instruments across surgical specialities. We work with customers to understand their requirements and share information about our products.</p><p>From instrument enquiries to catalogue requests, our team is ready to help.</p><div class="actions"><a class="button" href="#professionals">For professionals </a><a class="button white" href="#business">For B2B / Sales </a></div></div></section>
-<section class="audience" id="professionals"><h2>For Professionals</h2><div class="audience-panel"><div class="audience-copy"><div class="audience-num">01</div><h3>Supporting the people who use our instruments.</h3><p>Browse our instrument ranges for human and veterinary applications and contact our team to discuss the product details you need.</p><ul class="checks"><li>Specialist product ranges</li><li>Catalogue information</li><li>Responsive product enquiries</li></ul><a class="button alt" href="#catalogues">Explore our range </a></div><img src="<?php echo esc_url($asset.'generated-professional.jpg'); ?>" alt="Healthcare professional" loading="lazy"></div></section>
-<section class="audience reverse" id="business"><h2>For B2B / Sales</h2><div class="audience-panel"><div class="audience-copy"><div class="audience-num">02</div><h3>Your partner for surgical instrument enquiries.</h3><p>Looking for a surgical instrument supplier? Contact our team to discuss your catalogue and product requirements.</p><ul class="checks"><li>Catalogue enquiries</li><li>Product information</li><li>Business enquiries</li></ul><a class="button white" href="#contact">Contact our team </a></div><img src="<?php echo esc_url($asset.'manufacturing.svg'); ?>" alt="Surgical instrument manufacturing illustration" loading="lazy"></div></section>
-<section class="portfolio" id="catalogues"><span class="ref-kicker">Explore our portfolio.</span><h2>Our catalogues.</h2><p>Discover our surgical instrument ranges.</p><div class="grid"><?php foreach(medexos_items() as $key=>$item): $page=get_page_by_path($key); ?><article class="card"><?php if(function_exists('medexos_asset_url')): ?><img src="<?php echo esc_url(medexos_asset_url('covers/'.$key.'.jpg')); ?>" alt="<?php echo esc_attr($item['title'].' catalogue cover'); ?>" loading="lazy"><?php endif; ?><div class="card-body"><h3><?php echo esc_html($item['title']); ?></h3><?php if($page && $page->post_status==='publish'): ?><a href="<?php echo esc_url(get_permalink($page)); ?>">Explore catalogue </a><?php else: ?><span>Catalogue page awaiting setup</span><?php endif; ?></div></article><?php endforeach; ?></div></section>
-<section class="ref-contact" id="contact"><div><span class="ref-kicker">Feel free to send us a request!</span><h2>Have a question?<br>We're here to help.</h2></div><div><h3>Let's talk about your requirements.</h3><p>Our team is available to help with product and catalogue enquiries.</p><div class="actions"><a class="button white" href="tel:+923296324928">+92 329 6324928</a><a class="button white" href="mailto:info@medexossurgical.com">Email our team</a></div></div></section><?php get_footer(); ?>
+
+if (is_page() && medexos_uses_page_builder()) {
+	require get_template_directory() . '/templates/elementor-full-width.php';
+	return;
+}
+
+get_header();
+
+$asset        = get_template_directory_uri() . '/assets/';
+$arrow        = medexos_arrow_icon_svg();
+$whatsapp_url = medexos_whatsapp_url();
+?>
+
+<section class="hero" aria-label="<?php esc_attr_e('Introduction', 'medexos'); ?>">
+	<div class="panel hero-copy">
+		<p class="hero-kicker"><?php esc_html_e('Your partner for surgical instruments and manufacturing enquiries.', 'medexos'); ?></p>
+		<h1>MEDEXOS.<span>surgical<br>instruments.</span></h1>
+		<p class="hero-lead"><?php esc_html_e('Explore our surgical instrument portfolio for human healthcare and veterinary applications, backed by responsive product and commercial support.', 'medexos'); ?></p>
+		<div class="actions">
+			<a class="button" href="<?php echo esc_url(medexos_page_url('who-we-are')); ?>">
+				<span><?php esc_html_e('Who we are', 'medexos'); ?></span>
+				<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			</a>
+			<a class="button alt" href="<?php echo esc_url(medexos_page_url('portfolio')); ?>">
+				<span><?php esc_html_e('Our portfolio', 'medexos'); ?></span>
+				<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			</a>
+		</div>
+	</div>
+	<div class="panel hero-art">
+		<img src="<?php echo esc_url($asset . 'technical.svg'); ?>" alt="<?php esc_attr_e('Illustrated technical drawing of Medexos surgical instruments', 'medexos'); ?>">
+	</div>
+</section>
+
+<section class="ref-intro" id="about">
+	<div class="intro-visual">
+		<img src="<?php echo esc_url($asset . 'manufacturing.svg'); ?>" alt="<?php esc_attr_e('Conceptual surgical instrument manufacturing illustration', 'medexos'); ?>">
+	</div>
+	<div>
+		<span class="ref-kicker"><?php esc_html_e('What we do', 'medexos'); ?></span>
+		<h2><?php esc_html_e('Our dedication is to surgical instrumentation.', 'medexos'); ?></h2>
+		<p><?php esc_html_e('Medexos Surgical Enterprises offers a focused portfolio of instruments across surgical specialities. We work closely with clinical buyers and distribution partners to understand exact requirements and share product documentation.', 'medexos'); ?></p>
+		<p><?php esc_html_e('From individual instrument enquiries to full catalogue requests and ongoing B2B supply discussions, our team is ready to assist.', 'medexos'); ?></p>
+		<div class="intro-meta" aria-label="<?php esc_attr_e('Key focus areas', 'medexos'); ?>">
+			<span><?php esc_html_e('Human & Veterinary Ranges', 'medexos'); ?></span>
+			<span class="sep" aria-hidden="true">&middot;</span>
+			<span><?php esc_html_e('Catalogue Information', 'medexos'); ?></span>
+			<span class="sep" aria-hidden="true">&middot;</span>
+			<span><?php esc_html_e('Direct B2B Enquiries', 'medexos'); ?></span>
+		</div>
+		<div class="actions">
+			<a class="button" href="<?php echo esc_url(medexos_page_url('for-professionals')); ?>">
+				<span><?php esc_html_e('For professionals', 'medexos'); ?></span>
+				<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			</a>
+			<a class="button white" href="<?php echo esc_url(medexos_page_url('for-b2b-sales')); ?>">
+				<span><?php esc_html_e('For B2B / Sales', 'medexos'); ?></span>
+				<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="audience" id="professionals">
+	<h2><?php esc_html_e('For Professionals', 'medexos'); ?></h2>
+	<div class="audience-panel">
+		<div class="audience-copy">
+			<div class="audience-num" aria-hidden="true">01</div>
+			<h3><?php esc_html_e('Supporting the people who use our instruments.', 'medexos'); ?></h3>
+			<p><?php esc_html_e('Browse our instrument ranges for human and veterinary applications and contact our team to discuss product specifications and catalogue details.', 'medexos'); ?></p>
+			<ul class="checks">
+				<li><?php esc_html_e('Specialist product ranges', 'medexos'); ?></li>
+				<li><?php esc_html_e('Catalogue information', 'medexos'); ?></li>
+				<li><?php esc_html_e('Responsive product enquiries', 'medexos'); ?></li>
+			</ul>
+			<a class="button alt" href="<?php echo esc_url(medexos_page_url('for-professionals')); ?>">
+				<span><?php esc_html_e('Learn more', 'medexos'); ?></span>
+				<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			</a>
+		</div>
+		<img src="<?php echo esc_url($asset . 'generated-professional.jpg'); ?>" alt="<?php esc_attr_e('Healthcare professional in clinical coat with stethoscope', 'medexos'); ?>" loading="lazy">
+	</div>
+</section>
+
+<section class="audience reverse" id="business">
+	<h2><?php esc_html_e('For B2B / Sales', 'medexos'); ?></h2>
+	<div class="audience-panel">
+		<div class="audience-copy">
+			<div class="audience-num" aria-hidden="true">02</div>
+			<h3><?php esc_html_e('Your partner for surgical instrument enquiries.', 'medexos'); ?></h3>
+			<p><?php esc_html_e('Looking for a dependable surgical instrument supplier? Explore our commercial partnership approach or speak with our team about catalogue and volume requirements.', 'medexos'); ?></p>
+			<ul class="checks">
+				<li><?php esc_html_e('Catalogue enquiries', 'medexos'); ?></li>
+				<li><?php esc_html_e('Product information', 'medexos'); ?></li>
+				<li><?php esc_html_e('Commercial & B2B enquiries', 'medexos'); ?></li>
+			</ul>
+			<div class="actions">
+				<a class="button white" href="<?php echo esc_url(medexos_page_url('b2b-partnerships')); ?>">
+					<span><?php esc_html_e('Learn more', 'medexos'); ?></span>
+					<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				</a>
+				<a class="button" href="<?php echo esc_url(medexos_page_url('for-b2b-sales')); ?>">
+					<span><?php esc_html_e('For B2B / Sales', 'medexos'); ?></span>
+					<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				</a>
+			</div>
+		</div>
+		<img src="<?php echo esc_url($asset . 'manufacturing.svg'); ?>" alt="<?php esc_attr_e('Surgical instrument manufacturing illustration', 'medexos'); ?>" loading="lazy">
+	</div>
+</section>
+
+<section class="portfolio" id="catalogues">
+	<div class="portfolio-head">
+		<div class="portfolio-head-copy">
+			<span class="ref-kicker"><?php esc_html_e('Explore our portfolio', 'medexos'); ?></span>
+			<h2><?php esc_html_e('Our catalogues.', 'medexos'); ?></h2>
+			<p><?php esc_html_e('Discover our surgical instrument ranges across human and veterinary applications.', 'medexos'); ?></p>
+		</div>
+		<a class="button white" href="<?php echo esc_url(medexos_page_url('portfolio')); ?>">
+			<span><?php esc_html_e('View full portfolio', 'medexos'); ?></span>
+			<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+		</a>
+	</div>
+	<?php echo medexos_render_catalogues_grid(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+</section>
+
+<section class="ref-contact" id="contact">
+	<div class="ref-contact-panel">
+		<div>
+			<span class="ref-kicker"><?php esc_html_e('Feel free to send us a request', 'medexos'); ?></span>
+			<h2><?php esc_html_e('Have a question?', 'medexos'); ?><br><?php esc_html_e("We're here to help.", 'medexos'); ?></h2>
+			<p><?php esc_html_e('Reach our team via WhatsApp, telephone, or email, or visit our Contact page for full enquiry guidance.', 'medexos'); ?></p>
+		</div>
+		<div>
+			<h3><?php esc_html_e("Let's talk about your requirements.", 'medexos'); ?></h3>
+			<p><?php esc_html_e('Our team is available to assist with product specifications, catalogue requests, and commercial enquiries.', 'medexos'); ?></p>
+			<div class="actions">
+				<?php if ($whatsapp_url) : ?>
+					<a class="button medexos-whatsapp" href="<?php echo esc_url($whatsapp_url); ?>" target="_blank" rel="noopener noreferrer">
+						<span><?php esc_html_e('WhatsApp Enquiry', 'medexos'); ?></span>
+						<?php echo medexos_whatsapp_icon_svg(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+					</a>
+				<?php endif; ?>
+				<a class="button white" href="<?php echo esc_url(medexos_page_url('contact')); ?>">
+					<span><?php esc_html_e('Contact page', 'medexos'); ?></span>
+					<?php echo $arrow; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				</a>
+				<a class="button white" href="tel:+923296324928">+92 329 6324928</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<?php
+get_footer();

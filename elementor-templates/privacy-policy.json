@@ -1,0 +1,779 @@
+{
+  "title": "Medexos Surgical — Privacy Policy (Draft)",
+  "type": "page",
+  "version": "0.4",
+  "page_settings": {
+    "template": "templates/elementor-full-width.php",
+    "hide_title": "yes"
+  },
+  "content": [
+    {
+      "id": "mxpp0018",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1370,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "28",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "12",
+          "bottom": "20",
+          "left": "12",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "mxpp0019",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column",
+            "flex_align_items": "center",
+            "flex_gap": {
+              "column": "48",
+              "row": "28",
+              "isLinked": false,
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(7, 70, 107, 0.10)",
+            "border_radius": {
+              "unit": "px",
+              "top": "6",
+              "right": "6",
+              "bottom": "6",
+              "left": "6",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "56",
+              "right": "60",
+              "bottom": "56",
+              "left": "60",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "36",
+              "right": "28",
+              "bottom": "36",
+              "left": "28",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "26",
+              "right": "20",
+              "bottom": "26",
+              "left": "20",
+              "isLinked": false
+            },
+            "css_classes": "mx-hero-pattern"
+          },
+          "elements": [
+            {
+              "id": "mxpp0014",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "width": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_tablet": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpp0015",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Draft for Review",
+                    "header_size": "p",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "600"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpp0016",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Privacy Policy",
+                    "header_size": "h1",
+                    "title_color": "#07466b",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 50,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 39,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 33,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.12,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -1.1,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpp0017",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Draft privacy notice outlining how Medexos Surgical Enterprises handles enquiry and website data. Complete all flagged policy decisions before publishing.</p>",
+                    "text_color": "#4b5c6e",
+                    "typography_typography": "custom",
+                    "typography_font_family": "DM Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 17,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.66,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mxpp0020",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1370,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "24",
+          "right": "16",
+          "bottom": "72",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_tablet": {
+          "unit": "px",
+          "top": "28",
+          "right": "16",
+          "bottom": "28",
+          "left": "16",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "24",
+          "right": "12",
+          "bottom": "24",
+          "left": "12",
+          "isLinked": false
+        },
+        "flex_direction": "column"
+      },
+      "elements": [
+        {
+          "id": "mxpp0021",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_gap": {
+              "column": "14",
+              "row": "14",
+              "isLinked": true,
+              "unit": "px"
+            },
+            "background_background": "classic",
+            "background_color": "#ffffff",
+            "border_border": "solid",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_color": "rgba(7, 70, 107, 0.10)",
+            "border_radius": {
+              "unit": "px",
+              "top": "6",
+              "right": "6",
+              "bottom": "6",
+              "left": "6",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "48",
+              "right": "52",
+              "bottom": "48",
+              "left": "52",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "24",
+              "right": "20",
+              "bottom": "24",
+              "left": "20",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "mxpp0001",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "column",
+                "flex_gap": {
+                  "column": "8",
+                  "row": "8",
+                  "isLinked": true,
+                  "unit": "px"
+                },
+                "background_background": "classic",
+                "background_color": "#fdf8ee",
+                "border_border": "solid",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_color": "#d9b66b",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "6",
+                  "right": "6",
+                  "bottom": "6",
+                  "left": "6",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "22",
+                  "right": "26",
+                  "bottom": "22",
+                  "left": "26",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "mxpp0002",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Draft Legal Page — Review Required Before Publishing",
+                    "header_size": "h3",
+                    "title_color": "#5a4212",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Plus Jakarta Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 24,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 22,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2,
+                      "sizes": []
+                    },
+                    "typography_letter_spacing": {
+                      "unit": "px",
+                      "size": -0.4,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "mxpp0003",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Keep this WordPress page in <strong>Draft</strong> status until Medexos Surgical Enterprises reviews and completes every flagged item below. Once approved and published, the theme footer automatically adds the link.</p><ul><li><strong>[REVIEW REQUIRED]</strong> Name and registered physical address of the Data Controller.</li><li><strong>[REVIEW REQUIRED]</strong> Web hosting provider name, server location, and log retention period.</li><li><strong>[REVIEW REQUIRED]</strong> Disclosure of external services used on the live WordPress site (WhatsApp click-to-chat, Google Fonts or self-hosted fonts, contact form plugins, analytics, or cookie consent tool).</li><li><strong>[REVIEW REQUIRED]</strong> Applicable data protection laws (e.g., GDPR for EU visitors, UK GDPR, or local regulations) and data retention periods.</li></ul>",
+                    "text_color": "#5a4212",
+                    "typography_typography": "custom",
+                    "typography_font_family": "DM Sans",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.66,
+                      "sizes": []
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "mxpp0004",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "1. Data Controller",
+                "header_size": "h2",
+                "title_color": "#07466b",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.4,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0005",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>Medexos Surgical Enterprises</strong><br>[REVIEW REQUIRED: Registered postal address]<br>Email: info@medexossurgical.com<br>Telephone: +92 329 6324928</p>",
+                "text_color": "#4b5c6e",
+                "typography_typography": "custom",
+                "typography_font_family": "DM Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.66,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0006",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "2. Hosting & Server Access Logs",
+                "header_size": "h2",
+                "title_color": "#07466b",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.4,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0007",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[REVIEW REQUIRED: Insert your WordPress hosting provider name, data centre region, and server log retention period for technical security and site delivery.]</p>",
+                "text_color": "#4b5c6e",
+                "typography_typography": "custom",
+                "typography_font_family": "DM Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.66,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0008",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "3. Enquiries via Email, Telephone & WhatsApp",
+                "header_size": "h2",
+                "title_color": "#07466b",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.4,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0009",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>When you contact us by email, telephone, or WhatsApp, we process the contact and enquiry details you share in order to respond to your request. Note that clicking a WhatsApp enquiry link opens WhatsApp (a third-party messaging service governed by its own privacy policy). [REVIEW REQUIRED: Confirm retention timeframe and lawful basis wording.]</p>",
+                "text_color": "#4b5c6e",
+                "typography_typography": "custom",
+                "typography_font_family": "DM Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.66,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0010",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "4. Fonts, Cookies & Embedded Services",
+                "header_size": "h2",
+                "title_color": "#07466b",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.4,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0011",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>[REVIEW REQUIRED: Document whether Google Fonts are loaded remotely or self-hosted, whether cookies/analytics are enabled, and include your cookie consent policy if applicable.]</p>",
+                "text_color": "#4b5c6e",
+                "typography_typography": "custom",
+                "typography_font_family": "DM Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.66,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0012",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "5. Your Rights",
+                "header_size": "h2",
+                "title_color": "#07466b",
+                "typography_typography": "custom",
+                "typography_font_family": "Plus Jakarta Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 24,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 22,
+                  "sizes": []
+                },
+                "typography_font_weight": "700",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.2,
+                  "sizes": []
+                },
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": -0.4,
+                  "sizes": []
+                },
+                "_margin": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "mxpp0013",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>You may contact info@medexossurgical.com to request information about, correction of, or deletion of personal data you have submitted to us. [REVIEW REQUIRED: Align exact statutory rights and supervisory authority disclosures with your target jurisdictions.]</p>",
+                "text_color": "#4b5c6e",
+                "typography_typography": "custom",
+                "typography_font_family": "DM Sans",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.66,
+                  "sizes": []
+                }
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
